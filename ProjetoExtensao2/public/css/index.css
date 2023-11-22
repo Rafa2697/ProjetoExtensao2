@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Oxanium:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Oxanium:wght@700&family=Quantico:ital,wght@1,700&display=swap');
+
+*{
+    
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family:'Quantico', cursive;
+}
+html{
+  height: 100%;
+}
+body{
+  background-image: url(https://s3-alpha-sig.figma.com/img/4e53/637d/b22e047d0265c70f0f553cbda8f7d37d?Expires=1701648000&Signature=LURCKjMze2wlYL74M6uziXMtL0VRClYn9WKV5SyV9zm~zVki31Lkt9d7W12nJM0jkW4UZrcOPrs5KDuiipfnJvVuldz0soYL-keVlaomommATXoyCcO1WrgjdVCjU42HT8T4oCZtQN8Nirb5thF9Di-tc17MstJKgUKqKozhpQjdqHPWUsjpqefshGFUhmQzIYib9zQNGuuozuOTbxFBdukFXTuxvV2C5Uk40rufWbdNi2BZNT4LWMc0TaFSXTszryKwHBcpJELg9C8TwSW6FM8LDw6yChI5T-gKhwjWYPJ6RNYieinT9xUlL2A8jkCDYi8uid6cw29xI821257CDw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  color: white;
+}
+main{
+  padding-bottom: 20px;
+}
+.logo img{
+  width: 545px;
+}
+
+@keyframes nometitulo {
+  from {color: white;}
+  to{color: yellow;}
+}
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 21px;
+  color:#fff;
+
+}
+
+span {
+  font-size: 21px;
+  margin-bottom: 5rem;
+}
+
+h3 {
+  font-size: 20px;
+  color:#fff;
+
+}
+
+.box-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49%;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 25px;
+    border: 7px dashed #FFF;
+    padding: 10px;
+}
+.box-information, h2, h3{
+    padding: 10px;
+}
+
+
+.scorebord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 30px auto;
+    border: 4px solid whitesmoke;
+    padding: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+table th, td {
+    background-color: #011e3e;
+    font-size: 16px;
+    width: 200vw;
+    margin: 30px;
+  }
+
+.botao{
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(180deg, #3CC0F3 60.16%, #1E88EB 160.16%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.btnsave {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, rgb(9, 173, 255) 0%, rgb(13, 108, 233) 100%);
+    border-radius: 20px;
+}
+
+.btnsave:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btnsave[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 768px) {
+    .box-information{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      margin: 15px auto;
+      border: 4px dashed white;
+      border-radius: 40px;
+      
+  }
+    .box-information, h2, h3{
+      padding: 5px;
+      
+  }
+  .scorebord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    border: 4px groove whitesmoke;
+    
+}
+table th, td {
+  border: 1px solid black;
+  width: 100vw;
+  border-radius: 10px;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  justify-content: space-around;
+}
+  }

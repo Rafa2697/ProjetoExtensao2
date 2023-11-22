@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Oxanium:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Oxanium:wght@700&family=Quantico:ital,wght@1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family:'Oxanium', cursive;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background-image: url(https://s3-alpha-sig.figma.com/img/4e53/637d/b22e047d0265c70f0f553cbda8f7d37d?Expires=1701648000&Signature=LURCKjMze2wlYL74M6uziXMtL0VRClYn9WKV5SyV9zm~zVki31Lkt9d7W12nJM0jkW4UZrcOPrs5KDuiipfnJvVuldz0soYL-keVlaomommATXoyCcO1WrgjdVCjU42HT8T4oCZtQN8Nirb5thF9Di-tc17MstJKgUKqKozhpQjdqHPWUsjpqefshGFUhmQzIYib9zQNGuuozuOTbxFBdukFXTuxvV2C5Uk40rufWbdNi2BZNT4LWMc0TaFSXTszryKwHBcpJELg9C8TwSW6FM8LDw6yChI5T-gKhwjWYPJ6RNYieinT9xUlL2A8jkCDYi8uid6cw29xI821257CDw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+
+}
+
+h3{
+  font-size: 24px;
+}
+
+body h2 {
+  color: white;
+  font-size: 21px;
+}
+
+main {
+  border-radius: 36px;
+  border-right: 15px solid #011E3E;
+  border-bottom: 15px solid #011E3E;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  width: 900px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.question{
+  text-align: center;
+  color: #011E3E;
+  font-weight: 600;
+  font-size: 3.5rem;
+  padding: 10px;
+  font-family: 'Quantico', cursive;
+}
+
+.spnQtd {
+  text-align: end;
+  font-size: 21px;
+}
+
+.answers {
+  display: flex;
+  font-size: 4rem;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+button {
+  width: 100%;
+  text-align: start;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(180deg, #011E3E 60.16%, #0a2843 160.16%);
+  color: white;
+}
+
+.botoes{
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+    font-size: 30px;
+    padding: 10px;
+    width: 15rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(180deg, #3CC0F3 60.16%, #1E88EB 160.16%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+}
+
+.btn:hover, button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(4, 51, 108, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover, .button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.btnsave, buttonsave {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, rgb(7, 82, 120) 0%, rgb(6, 56, 122) 100%);
+    border-radius: 20px;
+}
+
+.btnsave:hover, buttonsave:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(5, 70, 149, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btnsave[disabled]:hover, buttonsave[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.finish span{
+  width: 100%;
+  text-align: center;
+  font-size: x-large;
+  color: darkred;
+}
+
+.finish button {
+  text-align: center;
+}
+
+.finish input{
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.274);
+  border-radius: 3px;
+  padding: 5px;
+  background-color:rgba(100, 148, 237, 0.071);
+  text-align: center;
+}
